@@ -47,7 +47,11 @@ members = [
 ]
 
 [workspace.dependencies.snarkvm]
-version = "0.16.15"
+version = "0.16.18"
+
+[workspace.dependencies.snarkos-cli]
+git = "https://github.com/AleoHQ/snarkOS.git"
+rev = "1d942fd"
 
 [lib]
 path = "leo/lib.rs"
@@ -151,7 +155,7 @@ version = "1.0"
 version = "2.0.0"
 
 [dependencies.snarkos-cli]
-version = "2.2.4"
+workspace = true
 
 [dependencies.snarkvm]
 workspace = true
